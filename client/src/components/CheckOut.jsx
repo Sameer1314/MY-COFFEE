@@ -24,7 +24,7 @@ export default function Checkout() {
           <div className="flex gap-4 mb-6">
             <button
               onClick={() => setMode("delivery")}
-              className={`flex-1 py-2 rounded border text-center font-medium ${
+              className={`flex-1 py-2 rounded border text-center font-medium cursor-pointer ${
                 mode === "delivery"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-100 text-gray-600"
@@ -34,7 +34,7 @@ export default function Checkout() {
             </button>
             <button
               onClick={() => setMode("pickup")}
-              className={`flex-1 py-2 rounded border text-center font-medium ${
+              className={`flex-1 py-2 rounded border text-center font-medium cursor-pointer ${
                 mode === "pickup"
                   ? "bg-blue-600 text-white"
                   : "bg-gray-100 text-gray-600"
