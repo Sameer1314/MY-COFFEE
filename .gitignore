@@ -29,7 +29,7 @@ Thumbs.db
 
 # 6. Editor directories & settings
 .vscode/
-!.vscode/extensions.json   # if you want to share workspace extensions config
+!.vscode/extensions.json  
 .idea/
 *.suo
 *.ntvs*
@@ -37,6 +37,6 @@ Thumbs.db
 *.sln
 *.sw?
 
-# 7. Optional: lockfiles you don’t care about
+# 7. Optional: lockfiles 
 # client/yarn.lock
 # server/yarn.lock
