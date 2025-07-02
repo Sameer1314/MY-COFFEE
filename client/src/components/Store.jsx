@@ -11,13 +11,12 @@ export default function FindStorePage() {
       setError("Please enter a location.");
     } else {
       setError("");
-      // Additional dynamic search logic can be added here
     }
   };
 
-  // Replace this embed URL with one generated from Google Maps for your store location.
+  //  embed URL with one generated from Google Maps for your store location.
   const embedUrl =
-    "https:www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10130.621272079128!2d72.97655512991645!3d19.188170668072093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b90a6d3d1c2d%3A0x239d6bfd46240353!2sSahyog%20College%20of%20IT%20and%20Management!5e1!3m2!1sen!2sin!4v1742321864302!5m2!1sen!2sin";
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10130.621272079128!2d72.97655512991645!3d19.188170668072093!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7b90a6d3d1c2d%3A0x239d6bfd46240353!2sSahyog%20College%20of%20IT%20and%20Management!5e1!3m2!1sen!2sin!4v1742321864302!5m2!1sen!2sin";
   return (
     <div className="min-h-px flex flex-col md:flex-row border-t-3 border-b-3 border-[#7f5539]">
       {/* Left Column */}
