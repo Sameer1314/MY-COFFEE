@@ -4,7 +4,7 @@
 import javachipImg from "../assets/homepageimg/javachip.jpg";
 import doublechocoImg from "../assets/menupageimg/doublechoco.jpg";
 import cafeamericanoImg from "../assets/menupageimg/Café americano.jpg";
-import coldcoffeeImg from "../assets/menupageimg/cold-Coffee.jpg";
+import coldcoffeeImg from "../assets/menupageimg/Cold-Coffee.jpg";
 import cappucinnoImg from "../assets/menupageimg/cappu.jpg";
 import icedlatteImg from "../assets/menupageimg/icedlatte.jpg";
 import latteImg from "../assets/menupageimg/latte.jpg";
