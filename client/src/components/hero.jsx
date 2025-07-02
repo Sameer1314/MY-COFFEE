@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import coffee from "../assets/White_Coffee_Instant_Coffee_Cafe_PNG_-_Free_Download-removebg-preview.png";
 
 const HeroSection = () => {
   return (
@@ -53,11 +54,7 @@ const HeroSection = () => {
 
       {/* Right Section - Image */}
       <div className="md:w-1/2 flex justify-center mt-10 md:mt-0">
-        <img
-          src=".\src\assets\White_Coffee_Instant_Coffee_Cafe_PNG_-_Free_Download-removebg-preview.png"
-          alt="coffee"
-          className="w-[90%] md:w-full max-w-md"
-        />
+        <img src={coffee} alt="coffee" className="w-[90%] md:w-full max-w-md" />
       </div>
     </section>
   );
