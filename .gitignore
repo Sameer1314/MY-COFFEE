@@ -40,3 +40,9 @@ Thumbs.db
 # 7. Optional: lockfiles 
 # client/yarn.lock
 # server/yarn.lock
+
+# lockfiles & node modules
+package.jason
+package-lock.json
+yarn.lock
+node_modules/
