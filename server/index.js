@@ -2,15 +2,14 @@ const express = require("express");
 const mongoose = require("mongoose");
 const cors = require("cors");
 const EmployeeModel = require("./models/employee");
+require("dotenv").config();
 
 const app = express();
 app.use(express.json());
 app.use(cors());
 
 // 1) Connect to Mongo
-mongoose.connect(
-  "mongodb+srv://samzzz:samzzz1819@cluster0.wo7gbru.mongodb.net/employee?retryWrites=true&w=majority"
-);
+mongoose.connect(process.env.MONGO_URI);
 
 app.post("/login", (req, res) => {
   const { email, password } = req.body;
