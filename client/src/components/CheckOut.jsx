@@ -15,7 +15,7 @@ export default function Checkout() {
   const total = totalAmount + shipping - discount;
 
   return (
-    <div className="min-h-screen bg-gray-100 flex justify-center py-10 px-4 border-t-2  border-[#7f5539]">
+    <div className="min-h-screen bg-[#dedbd8] flex justify-center py-10 px-4 border-t-2  border-[#7f5539]">
       <div className="w-full max-w-6xl grid grid-cols-1 lg:grid-cols-2 bg-white shadow rounded overflow-hidden">
         {/* Left - Shipping / Pickup */}
         <div className="p-6 sm:p-8">
