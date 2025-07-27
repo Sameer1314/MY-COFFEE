@@ -77,16 +77,15 @@ export default function FindStorePage() {
       </div>
 
       {/* Right Column (Map) */}
-      <div className="flex-1 bg-gray-100 border-r-2 border-[#7f5539]">
+      <div className="w-full h-[500px] md:h-screen border-r-2 border-[#7f5539]">
         <iframe
           title="Store Location Map"
           src={embedUrl}
-          width="100%"
-          height="100%"
+          className="w-full h-full"
           frameBorder="0"
-          style={{ border: 0, minHeight: "100vh" }}
+          style={{ border: 0 }}
           allowFullScreen
-        ></iframe>
+        />
       </div>
     </div>
   );
