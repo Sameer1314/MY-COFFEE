@@ -1,20 +1,21 @@
+// Hero3.jsx
 import React from "react";
 import coffeeheavenImg from "../assets/homepageimg/coffee-heaven.jpg";
 import jeanImg from "../assets/homepageimg/jean-coffee.jpg";
 
 const Hero3 = () => {
   return (
-    <section className="w-full bg-[#E5D3B3] py-16 border-t-1 border-b-1 border-white">
+    <section className="w-full overflow-x-hidden bg-[#E5D3B3] py-16 border-t border-b border-white">
       <div className="max-w-6xl mx-auto px-6 flex flex-col gap-16">
         {/* First Block */}
         <div className="flex flex-col lg:flex-row items-center gap-10">
-          <div className="relative w-full lg:w-1/2 ">
+          <div className="relative w-full lg:w-1/2 overflow-visible rounded-lg">
             <img
               src={coffeeheavenImg}
               alt="Coffee Heaven"
-              className="w-full max-w-sm rounded-lg shadow-lg transform rotate-[-5deg] border-2 border-white"
+              className="w-full max-w-sm transform rotate-0 md:-rotate-5 transition duration-300 border-2 border-white shadow-lg"
             />
-            <div className="absolute inset-0 border-2 border-black -z-10 rotate-6"></div>
+            <div className="absolute inset-0 border-2 border-black -z-10 transform rotate-0 md:rotate-6"></div>
           </div>
           <div className="w-full lg:w-1/2">
             <h2 className="text-4xl font-bold text-[#6c584c]">Coffee Heaven</h2>
@@ -35,13 +36,13 @@ const Hero3 = () => {
 
         {/* Second Block */}
         <div className="flex flex-col lg:flex-row-reverse items-center gap-10">
-          <div className="relative w-full lg:w-1/2 -mr-15">
+          <div className="relative w-full lg:w-1/2 overflow-visible rounded-lg">
             <img
               src={jeanImg}
               alt="Jean's Coffee"
-              className="w-full max-w-sm rounded-lg shadow-lg transform rotate-[5deg] border-2 border-white"
+              className="w-full max-w-sm transform rotate-0 md:rotate-5 transition duration-300 border-2 border-white shadow-lg"
             />
-            <div className="absolute inset-0 border-2 border-black -z-10 rotate-[-6deg] "></div>
+            <div className="absolute inset-0 border-2 border-black -z-10 transform rotate-0 md:-rotate-6"></div>
           </div>
           <div className="w-full lg:w-1/2 text-center lg:text-left">
             <h2 className="text-4xl font-bold text-[#6c584c]">Jean’s Coffee</h2>

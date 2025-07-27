@@ -39,8 +39,8 @@ export default function Navbar() {
     " block px-3 py-2 rounded-md text-base font-semibold text-gray-800";
 
   return (
-    <nav className="bg-[#d5bdaf] sticky top-0 z-50">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <nav className="w-full bg-[#d5bdaf] sticky top-0 z-50">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 md:px-4 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <NavLink
@@ -81,19 +81,25 @@ export default function Navbar() {
           </div>
 
           {/* Search + Auth (desktop) */}
-          <div className="hidden md:flex items-center space-x-4 -mr-[100px] ">
+          <div className="hidden md:flex items-center space-x-4 mr-0">
             <Input />
+
             {isAuthenticated ? (
               <div
                 onClick={() => {
                   window.scrollTo(0, 0);
                   handleLogout();
                 }}
+                className="flex-shrink-0"
               >
                 <LogOutButton />
               </div>
             ) : (
-              <Link to="/signUP" onClick={() => window.scrollTo(0, 0)}>
+              <Link
+                to="/signUP"
+                onClick={() => window.scrollTo(0, 0)}
+                className="flex-shrink-0"
+              >
                 <Button />
               </Link>
             )}

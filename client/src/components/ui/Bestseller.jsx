@@ -95,26 +95,36 @@ export default function Bestseller() {
   };
 
   return (
-    <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+    <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
       {bestsellerItems.map((item) => (
         <div
           key={item.id}
-          className="relative bg-[#e6ccb2] shadow-md rounded-lg p-4 hover:scale-105 transition-transform border border-[#7f5539]"
+          className="relative flex flex-col justify-between bg-[#e6ccb2] shadow-md rounded-lg p-3 sm:p-4 hover:scale-105 transition-transform border border-[#7f5539] md:min-h-[450px]"
         >
           <img
             src={item.image || "https://via.placeholder.com/200"}
             alt={item.name}
-            className="w-full h-65 object-cover rounded-md border-2 border-[#7f5539]"
+            className="w-full h-40 sm:h-60 md:h-65 object-cover rounded-md border-2 border-[#7f5539]"
           />
-          <h3 className="text-[#6c584c] text-lg font-bold mt-2">{item.name}</h3>
-          <p className="text-[#6c584c] text-sm">{item.description}</p>
-          <div className="mt-3 flex justify-between items-center border-t-2 border-black p-4 bg-[#e6ccb2]">
-            <span className="text-lg font-bold">{item.displayPrice}</span>
+
+          <div className="mt-2 flex flex-col flex-grow">
+            <h3 className="text-[#6c584c] text-base sm:text-lg font-bold">
+              {item.name}
+            </h3>
+            <p className="text-sm text-[#6c584c] overflow-hidden h-[3.6rem] leading-tight">
+              {item.description}
+            </p>
+          </div>
+
+          <div className="mt-2 sm:mt-3 flex justify-between items-center border-t-2 border-black pt-2 sm:pt-3">
+            <span className="text-base sm:text-lg font-bold">
+              {item.displayPrice}
+            </span>
             <button
               onClick={() => handleAddItem(item)}
-              className="bg-green-600 text-white px-3 py-1 rounded-md hover:bg-green-700 cursor-pointer"
+              className="bg-green-600 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-md hover:bg-green-700 cursor-pointer"
             >
-              Add Item
+              Add
             </button>
           </div>
         </div>

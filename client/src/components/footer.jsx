@@ -8,7 +8,7 @@ function Footer() {
     <footer className="bg-[#ede0d4] text-gray-600 body-font">
       <div className="container px-0 py-20 mx-auto flex  w-full justify-stretch md:items-center lg:items-start md:flex-row md:flex-nowrap flex-wrap flex-col">
         {/* Left Logo / Text */}
-        <div className="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left">
+        <div className="w-full md:w-64 flex-shrink-0 mx-auto md:mx-0 text-center md:text-left">
           <Link
             to="/home"
             className="flex title-font font-medium items-center md:justify-start justify-center text-gray-900 cursor-pointer"
@@ -19,7 +19,7 @@ function Footer() {
               BREW & CO.
             </span>
           </Link>
-          <p className="mt-2 pl-5 text-sm text-[#6c584c] -mr-20">
+          <p className="mt-2 px-4 text-center md:text-left md:pl-5 md:-mr-20 text-sm text-[#6c584c]">
             Brew & Co. is a leading coffee company in the United States & India,
             specializing in craft brewing and espresso.
           </p>

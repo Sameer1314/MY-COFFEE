@@ -65,11 +65,11 @@ export default function Menu() {
     <div className="bg-[#E5D3B3] border-t-2 border-b-2 border-white">
       <div className="bg-[#efdfc4] max-w-6xl mx-auto p-6">
         {/* Category Tabs */}
-        <div className="flex space-x-6 border-b pb-2 mb-4">
+        <div className="flex overflow-x-auto space-x-6 border-b pb-2 mb-4 scrollbar-hide">
           {categories.map((cat) => (
             <button
               key={cat}
-              className={`pb-2 border-b-4 font-bold cursor-pointer ${
+              className={`pb-2 border-b-4 font-bold cursor-pointer whitespace-nowrap ${
                 selectedCategory === cat
                   ? "border-[#6c584c] text-[#6c584c]"
                   : "border-transparent text-gray-600 "
