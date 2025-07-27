@@ -6,7 +6,12 @@ require("dotenv").config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: ["https://brewandco-nf92.onrender.com", "http://localhost:3001"], // <-- your React dev URL
+    credentials: true, // <-- allow the session cookie
+  })
+);
 
 // 1) Connect to Mongo
 mongoose.connect(process.env.MONGO_URI);
@@ -32,6 +37,6 @@ app.post("/signup", (req, res) => {
     .catch((err) => res.json({ error: err.message }));
 });
 
-app.listen(3001, () => {
-  console.log("server is running on port sameer");
+app.listen(process.env.PORT || 3001, () => {
+  console.log("Server running...");
 });

@@ -13,13 +13,15 @@ export default function WelcomePage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  const host = import.meta.env.VITE_API_URL;
+
   // single submit handler that branches on isLogin
   const handleSubmit = (e) => {
     e.preventDefault();
     if (isLogin) {
       // LOGIN
       axios
-        .post("http://localhost:3001/login", { email, password })
+        .post(`${host}/login`, { email, password })
         .then((res) => {
           console.log(res);
           if (res.data.message === "Login successful") {
@@ -31,7 +33,7 @@ export default function WelcomePage() {
     } else {
       // SIGNUP
       axios
-        .post("http://localhost:3001/signup", { name, email, password })
+        .post(`${host}/signup`, { name, email, password })
         .then((res) => {
           console.log(res);
           // 1) Show success feedback
