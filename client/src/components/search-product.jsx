@@ -137,27 +137,29 @@ export default function SearchProduct() {
         )}
 
         {query && results.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {results.map((item) => (
               <div
                 key={item.id}
-                className="relative bg-[#e3d5ca] shadow-md rounded-lg p-4 hover:scale-105 transition-transform border border-[#7f5539]"
+                className="relative flex flex-col justify-between bg-[#e6ccb2] shadow-md rounded-lg p-3 sm:p-4 hover:scale-105 transition-transform border border-[#7f5539] md:min-h-[450px]"
               >
                 <img
                   src={item.image}
                   alt={item.name}
-                  className="w-full h-65 object-cover rounded-md mb-3 border-2 border-[#7f5539]"
+                  className="w-full h-40 sm:h-60 md:h-65 object-cover rounded-md border-2 border-[#7f5539]"
                 />
                 <h2 className="text-[#6c584c] text-lg font-bold mt-2">
                   {item.name}
                 </h2>
-                <div className="mt-3 flex justify-between items-center border-t-2 border-black p-4 bg-[#e3d5ca]">
-                  <span className="text-lg font-bold">{item.price}</span>
+                <div className="mt-2 sm:mt-3 flex justify-between items-center border-t-2 border-black pt-2 sm:pt-3">
+                  <span className="text-base sm:text-lg font-bold">
+                    {item.price}
+                  </span>
                   <button
                     onClick={() => handleAddItem(item)}
-                    className="bg-green-600 text-white px-3 py-1 rounded-md hover:bg-green-700 cursor-pointer"
+                    className="bg-green-600 text-white px-2 py-1 sm:px-3 sm:py-1 rounded-md hover:bg-green-700 cursor-pointer"
                   >
-                    Add Item
+                    Add
                   </button>
                 </div>
               </div>
