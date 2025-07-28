@@ -4,7 +4,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { viteStaticCopy } from "vite-plugin-static-copy";
 
 export default defineConfig({
-  base: "./",
+  // base: "./",
   plugins: [
     react(),
     tailwindcss(),
