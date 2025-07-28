@@ -10,7 +10,7 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         {
-          src: "public/_redirects",
+          src: "public/.htaccess",
           dest: ".", // will go into dist/
         },
       ],
