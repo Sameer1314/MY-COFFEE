@@ -40,9 +40,6 @@ export default function WelcomePage() {
           alert("Registration successful!");
           // 2) Switch the modal to the LOGIN form
           setIsLogin(true);
-          // (optional) If you want to close and re-open the modal:
-          // setIsModalOpen(false);
-          // setTimeout(() => setIsModalOpen(true), 100);
         })
         .catch((err) => {
           console.log(err);
