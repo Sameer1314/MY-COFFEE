@@ -156,6 +156,7 @@ export default function WelcomePage() {
 
                 {/* Login Button */}
                 <button
+                  type = "submit"
                   onClick={() => window.scrollTo(0, 0)}
                   className="mt-2 w-full bg-[#7f5539] text-white font-semibold py-2 rounded hover:bg-[#1b1107] transition cursor-pointer"
                 >
