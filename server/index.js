@@ -40,3 +40,6 @@ app.post("/signup", (req, res) => {
 app.listen(process.env.PORT || 3001, () => {
   console.log("Server running...");
 });
+app.get("/", (req, res) => {
+  res.send("Backend is running 🚀");
+});
