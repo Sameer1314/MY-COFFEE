@@ -8,7 +8,7 @@ const app = express();
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://brewandco-nf92.onrender.com", "http://localhost:3001"], // <-- your React dev URL
+    origin: ["https://brewandco-nf92.onrender.com", "http://localhost:3001"], 
     credentials: true, // <-- allow the session cookie
   })
 );
